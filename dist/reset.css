@@ -1,0 +1,31 @@
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+input, button, a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+/*# sourceMappingURL=reset.css.map */

@@ -1,0 +1,33 @@
+@import "var";
+
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Rubik', sans-serif;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+main 
+{
+    max-width: $Desktop;
+    margin: 0 auto;
+}
+
+input, button, a
+{
+    border: none;
+    outline: none;
+    text-decoration: none;
+}

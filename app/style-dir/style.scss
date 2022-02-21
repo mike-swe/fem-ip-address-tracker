@@ -1,0 +1,159 @@
+@import "reset";
+@import "var";
+
+header
+{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 18rem;
+    background: url(./images/pattern-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% !important;    
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1
+{
+    padding-top: 2rem;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#search
+{
+    width: 23rem;
+    padding: 1rem .8rem;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    cursor: pointer;
+
+    @media screen and (max-width: 850px) {
+        width: 17rem;
+    }
+}
+
+button
+{
+    background: #111;
+    padding: 1.1rem 1rem;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    transition: background-color 200ms linear;
+    cursor: pointer;
+}
+
+
+#search-btn:hover
+{
+    background-color: $VeryDarkGray;
+}
+
+#error-message
+{
+    color: rgb(255, 81, 0);
+}
+
+#details-banner
+{
+    background: #fff;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    width: 1000px;
+    margin: 0 auto;
+    transform: translateY(-5rem);
+    border-radius: 15px;
+
+    @media screen and (max-width: 850px) {
+        display: block;
+        padding: .5rem .8rem;
+        width: calc(100vw - 30%);
+        margin: 0 auto;
+        transform: translateY(-6rem);
+    }
+}
+
+.detail
+{
+    border-left: 1px solid grey;
+    padding-left: 2rem;
+
+    p
+    {
+        padding-bottom: 2rem;
+    }
+
+    h2
+    {
+        position: relative;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 350ms ease-in-out;
+    }
+
+    h2::after
+    {
+        content: '';
+        border-top: .14em solid #111;
+        position: absolute;
+        bottom: -.3rem;
+        left: 0;
+        right: 100%;
+        border-radius: 55px;
+        transition: all 350ms ease-in-out;
+    }
+
+    h2:hover
+    {
+        color: $DarkGray;
+    }
+
+    h2:hover::after
+    {
+        color: $DarkGray;
+        right: 0;
+    }
+
+    @media screen and (max-width: 850px) {
+        font-size: 4vw;
+        text-align: center !important;
+        padding: 0;
+        border: none;
+        margin: .7rem 0;
+
+    h2 
+    {
+        font-size: 1rem;
+    }
+
+    p
+    {
+        font-size: .9rem;
+        padding-bottom: unset;
+    }
+    }
+}
+
+.detail:nth-child(1) 
+{
+    border-left: none;
+}
+
+#map
+{
+    height: 66vh;
+    width: 100%;
+    transform: translateY(-12rem);
+}
+
+#details-banner
+{
+    position: relative;
+    z-index: 100 !important;
+}
